@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -13,6 +18,13 @@
     body {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      background-color: hsl(217, 54%, 11%);
+      color: white;
+      font-family: Outfit, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .attribution {
@@ -27,19 +39,27 @@
 </head>
 
 <body>
-  <main>
-    <img src="images/image-equilibrium.jpg" alt="Equilibrium icon.">
-    <h1>Equilibrium #3429</h1>
-    <p>Our Equilibrium collection promotes balance and calm.</p>
-    <img src="images/icon-ethereum.svg" alt="Ethereum icon.">
-    <h3>0.041 ETH</h3>
-    <img src="images/icon-clock.svg" alt="Clock icon.">
-    <h3>3 days left</h3>
-    <img src="images/image-avatar.png" alt="Profile photo of Jules Wyvern.">
-    <h2>Creation of Jules Wyvern</h2>
+  <main class="max-w-[375px] bg-[#14253D] p-6 mx-[1em] mt-60 mb-0 rounded-2xl drop-shadow-2xl">
+    <img class="w-full rounded-xl" src="images/image-equilibrium.jpg" alt="Equilibrium icon.">
+    <h1 class="text-2xl font-semibold pt-6">Equilibrium #3429</h1>
+    <p class="text-lg text-[#8A9BB9] pt-4">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="flex flex-row justify-between py-4 border-b border-[#2F415B]">
+      <div class="flex flex-row justify-between items-center">
+        <img class="h-[18px] w-[12px]" src="images/icon-ethereum.svg" alt="Ethereum icon.">
+        <h3 class="text-lg font-semibold text-[#00FFF7] pl-2">0.041 ETH</h3>
+      </div>
+      <div class="flex flex-row justify-between items-center">
+        <img class="h-[18px] w-auto" src=" images/icon-clock.svg" alt="Clock icon.">
+        <h3 class="text-lg text-[#8A9BB9] pl-2">3 days left</h3>
+      </div>
+    </div>
+    <div class="flex flex-row items-center pt-4">
+      <img class="h-[40px] w-auto border rounded-full mr-5" src="images/image-avatar.png" alt="Profile photo of Jules Wyvern.">
+      <h2 class="text-lg font-normal text-[#8A9BB9]">Creation of <span class="text-white font-semibold">Jules Wyvern</span></h2>
+    </div>
   </main>
 
-  <footer class="attribution">
+  <footer class="attribution pt-4">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.github.com/SparkSyndrome" target="_blank">Christopher Burton</a>.
   </footer>
